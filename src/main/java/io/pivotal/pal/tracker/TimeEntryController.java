@@ -13,11 +13,8 @@ public class TimeEntryController {
 
     private TimeEntryRepository timeEntriesRepo;
 
-    public TimeEntryController(
-            TimeEntryRepository timeEntriesRepo
-    ) {
+    public TimeEntryController(TimeEntryRepository timeEntriesRepo) {
         this.timeEntriesRepo = timeEntriesRepo;
-
     }
 
     @PostMapping
@@ -58,6 +55,6 @@ public class TimeEntryController {
     @DeleteMapping("{id}")
     public ResponseEntity<TimeEntry> delete(@PathVariable Long id) {
         timeEntriesRepo.delete(id);
-         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
