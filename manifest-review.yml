@@ -2,7 +2,7 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  host: gayathri-pal-tracker-review
+  host: giri-gowdar-pal-tracker-review
   services:
     - tracker-database
   
