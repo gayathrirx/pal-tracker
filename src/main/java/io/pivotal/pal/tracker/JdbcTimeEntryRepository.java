@@ -18,6 +18,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
     private final JdbcTemplate jdbcTemplate;
 
     public JdbcTimeEntryRepository(DataSource dataSource) {
+
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
     @Override
