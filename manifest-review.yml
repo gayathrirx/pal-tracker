@@ -2,5 +2,5 @@
 applications:
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
-  host: g3-pal-tracker-review
+  host: gm-pal-tracker-review
   
